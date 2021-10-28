@@ -4,6 +4,7 @@ import Header from "./components/Header";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import ProductListing from "./components/ProductListing";
 import Product from "./components/Product";
+import ProductDetails from "./components/ProductDetails";
 
 function App() {
   return (
@@ -12,7 +13,11 @@ function App() {
         <Header></Header>
         <Switch>
           <Route path="/" exact component={ProductListing}></Route>
-          <Route path="/product/:productid" exact component={Product}></Route>
+          <Route
+            path="/product/:productid"
+            exact
+            component={ProductDetails}
+          ></Route>
           <Route>404 not found</Route>
         </Switch>
       </Router>
