@@ -3,7 +3,10 @@ import { useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import axios from "axios";
 import { useParams } from "react-router";
-import { selectedProduct } from "../redux/actions/productActions";
+import {
+  selectedProduct,
+  removeSelectedProduct,
+} from "../redux/actions/productActions";
 
 export default function ProductDetails() {
   const { productid } = useParams();
@@ -18,6 +21,7 @@ export default function ProductDetails() {
   };
   useEffect(() => {
     fetchProduct();
+    return dispatch(removeSelectedProduct());
   }, []);
   return Object.keys(product).length === 0 ? (
     <div>Loading...</div>

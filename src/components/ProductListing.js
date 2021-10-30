@@ -26,9 +26,15 @@ export default function ProductListing() {
   }, []);
   return (
     <div>
-      <h2>Product Listing</h2>
+      {/* <h2>Product Listing</h2> */}
       {product.map((item) => (
-        <Product product={item.title} />
+        <Product
+          id={item.id}
+          product={item.title}
+          price={item.price}
+          description={item.description}
+          imageUrl={item.image}
+        />
       ))}
     </div>
   );
