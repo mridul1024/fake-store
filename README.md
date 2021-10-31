@@ -1,6 +1,6 @@
-# Fake Store Application
+# Todo Application
 
-An online store which is created with react and redux.
+An application to create tasks and striking them off when they are completed.
 
 ## Deployment
 
@@ -14,4 +14,8 @@ An online store which is created with react and redux.
 
 ## Stuff covered in this application
 
-The project is in progress....
+- Implemented styled components
+- Used redux for state management
+  - created actions for getting products, displaying a single product and removing a product
+  - created reducers for dispatching the above stated actions
+- Used fake store api -> https://fakestoreapi.com/
