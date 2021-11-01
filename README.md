@@ -1,4 +1,4 @@
-# Todo Application
+# Fake Store Application
 
 An application to create tasks and striking them off when they are completed.
 
