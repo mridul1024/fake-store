@@ -1,6 +1,6 @@
 # Fake Store Application
 
-An application to create tasks and striking them off when they are completed.
+A fake ecommerce store which fetches products from fakestore api. State management was performed via redux.
 
 ## Deployment
 
